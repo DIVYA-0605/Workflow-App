@@ -52,7 +52,7 @@ const Field = () => {
     return () => {
       detachExternalChangeHandler();
     };
-  }, [sdk]);
+  }, [sdk,CONTENTFUL_ACCESS_TOKEN]);
 
   const handleReleaseChange = (event) => {
     const selectedValue = event.target.value;
